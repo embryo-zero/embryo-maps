@@ -30,7 +30,7 @@ jobs:
 
       - name: Create pull request
         if: steps.baselines.outputs.updated == 'true'
-        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1  #  v8.2.0
+        uses: peter-evans/create-pull-request@15733dbdfeedb4f7fdb73d13c6f5ac83b710fab8  #  v8.2.0
         with:
           # A PR opened with the default GITHUB_TOKEN does not trigger further
           # workflow runs, so the vcpkg report comment (posted from a
